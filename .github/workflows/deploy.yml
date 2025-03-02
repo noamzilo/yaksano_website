@@ -1,0 +1,37 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: node:18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - run: yarn install
+      - run: yarn build
+      - run: |
+          # Preserve CNAME if it exists
+          if [ -f "CNAME" ]; then
+            cp CNAME build/
+          fi
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git config --global --add safe.directory $GITHUB_WORKSPACE
+          
+          # Set default values for GitHub repository if not set (for local testing)
+          : ${GITHUB_REPOSITORY:="$(git config --get remote.origin.url | sed 's/.*github.com[:/]//' | sed 's/\.git$//')"}
+          
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          yarn deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+

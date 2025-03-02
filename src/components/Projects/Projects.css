@@ -1,0 +1,18 @@
+.projects__grid {
+	max-width: 1100px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2.5em;
+}
+
+.projects__grid * {
+	text-align: left;
+}
+
+/* Make it single column on smaller screens */
+@media (max-width: 768px) {
+	.projects__grid {
+		grid-template-columns: 1fr;
+	}
+}

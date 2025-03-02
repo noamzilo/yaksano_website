@@ -1,0 +1,54 @@
+.about {
+	flex-direction: column;
+	margin-top: 3em;
+}
+
+.about__name {
+	color: var(--clr-primary);
+}
+
+.about__role {
+	margin-top: 1.2em;
+}
+
+.about__desc {
+	font-size: 1rem;
+	max-width: 600px;
+	line-height: 1.6;
+}
+
+.about__desc span {
+	display: block;
+	margin-bottom: 0.1em;
+}
+
+.about__desc,
+.about__contact {
+	margin-top: 2.4em;
+}
+
+.about .link--icon {
+	margin-right: 0.8em;
+}
+
+.about .btn--outline {
+	margin-right: 1em;
+	text-transform: none;
+}
+
+@media (max-width: 600px) {
+	.app .about {
+		align-items: flex-start;
+		margin-top: 2em;
+	}
+}
+
+.stackoverflow-icon {
+	width: 24px;
+	height: 24px;
+	color: var(--clr-fg);
+}
+
+.link--icon:hover .stackoverflow-icon {
+	color: var(--clr-primary);
+}
