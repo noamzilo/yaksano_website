@@ -1,3 +1,49 @@
 .contact {
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	max-width: 800px;
+	margin: auto;
+}
+
+.contact__text {
+	font-size: 1.1rem;
+	color: var(--clr-fg);
+	margin-bottom: 1em;
+}
+
+.contact__info {
+	text-align: left;
+	width: 100%;
+	max-width: 600px;
+}
+
+.contact__info p {
+	margin-bottom: 0.5em;
+	font-size: 1rem;
+	color: var(--clr-fg-alt);
+}
+
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0.8em 1.4em;
+	font-weight: 500;
+	font-size: 1rem;
+	transition: transform 0.2s ease-in-out;
+	margin-top: 1.5em;
+}
+
+.btn--outline {
+	color: var(--clr-primary);
+	border: 2px solid var(--clr-primary);
+	background-color: transparent;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn--outline:hover {
+	color: var(--clr-bg);
+	background-color: var(--clr-primary);
 }

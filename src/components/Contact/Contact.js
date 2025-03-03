@@ -6,22 +6,21 @@ const Contact = () => {
 
 	return (
 		<section className='section contact center' id='contact'>
-			<h2 className='section__title'>Let’s Talk!</h2>
-			<p>
-				Have any questions or want to learn more about our AI and data solutions?
-				We’d love to hear from you! Reach out and let’s explore how we can help your business grow.
+			<h2 className='section__title'>Get in Touch</h2>
+			<p className='contact__text'>
+				Looking for AI and data science solutions? Let&apos;s work together to bring your ideas to life.
 			</p>
-			<a href={`mailto:${contact.email}`}>
-				<span type='button' className='btn btn--outline'>
-					Email Us
-				</span>
-			</a>
 
-			<div className='contact-info'>
-				<div>
-					<p><a href={`mailto:${contact.email}`}>{contact.email}</a></p>
-				</div>
+			<div className='contact__info'>
+				<p><strong>✔ Faster Ramp-Up:</strong> Get up and running quickly with minimal effort.</p>
+				<p><strong>✔ Cutting-Edge Tech:</strong> Stay ahead with the latest AI advancements.</p>
+				<p><strong>✔ Full Control:</strong> Own your data, strategy, and budget.</p>
+				<p><strong>✔ Secure IP:</strong> Your innovations stay protected.</p>
 			</div>
+
+			<a href={`mailto:${contact.email}`} className='btn btn--outline'>
+				Let&apos;s Talk!
+			</a>
 		</section>
 	)
 }
