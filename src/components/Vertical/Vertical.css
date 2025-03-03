@@ -5,6 +5,16 @@
 	display: flex;
 }
 
+/* When vertical has var(--clr-bg) background, its projects should have var(--clr-bg-alt) */
+.vertical[style*="var(--clr-bg)"] .project {
+	background: var(--clr-bg-alt);
+}
+
+/* When vertical has var(--clr-bg-alt) background, its projects should have var(--clr-bg) */
+.vertical[style*="var(--clr-bg-alt)"] .project {
+	background: var(--clr-bg);
+}
+
 .vertical__content {
 	max-width: 1200px;
 	width: 100%;
@@ -34,7 +44,6 @@
 
 .project {
 	margin: 0;
-	background: var(--clr-bg-alt);
 	border-radius: 8px;
 	overflow: hidden;
 	color: var(--clr-fg);
