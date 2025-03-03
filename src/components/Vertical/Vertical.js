@@ -2,13 +2,13 @@ import uniqid from 'uniqid'
 import './Vertical.css'
 
 const Vertical = ({ vertical }) => {
-	const { id, title, description, projects, backgroundImage } = vertical
+	const { id, title, description, projects, backgroundColor } = vertical
 
 	return (
 		<section
 			id={id}
 			className='vertical'
-			style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${backgroundImage})` }}
+			style={{ backgroundColor }}
 		>
 			<div className='vertical__content'>
 				<h2 className='vertical__title'>{title}</h2>

@@ -11,7 +11,7 @@ const about = {
 	description: 'We specialize in building sophisticated software solutions across data engineering, computer vision, and web development. With over a decade of experience, we help businesses harness the power of technology to drive innovation and growth.',
 	contact: {
 		email: 'contact@yaksano.com',
-		linkedin: 'https://www.linkedin.com/company/yaksano',
+		// linkedin: 'https://www.linkedin.com/company/yaksano',
 	},
 }
 
@@ -22,7 +22,7 @@ const verticals = [
 		id: 'data-engineering',
 		title: 'Data Engineering',
 		description: 'Building robust data pipelines and infrastructure to transform raw data into actionable insights.',
-		backgroundImage: 'data-engineering-bg.jpg',
+		backgroundColor: 'var(--clr-bg-alt)', // Use theme colors
 		projects: [
 			{
 				name: 'Automotive Data Pipeline',
@@ -52,7 +52,7 @@ const verticals = [
 		id: 'computer-vision',
 		title: 'Computer Vision & AI',
 		description: 'Developing advanced computer vision solutions for complex real-world challenges.',
-		backgroundImage: 'cv-bg.jpg',
+		backgroundColor: 'var(--clr-bg)', // Alternate with base color
 		projects: [
 			{
 				name: 'Automated Vehicle Inspection',
@@ -82,7 +82,7 @@ const verticals = [
 		id: 'web-development',
 		title: 'Web & Software Development',
 		description: 'Creating modern, scalable web applications and software solutions.',
-		backgroundImage: 'web-dev-bg.jpg',
+		backgroundColor: 'var(--clr-bg-alt)', // Back to alternate color
 		projects: [
 			{
 				name: 'JustGptIt.com',
