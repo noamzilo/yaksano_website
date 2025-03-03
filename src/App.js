@@ -17,9 +17,13 @@ const App = () => {
 
 			<main>
 				<About />
-				{verticals.map((vertical) => (
-					<Vertical key={vertical.id} vertical={vertical} />
-				))}
+			</main>
+
+			{verticals.map((vertical) => (
+				<Vertical key={vertical.id} vertical={vertical} />
+			))}
+
+			<main>
 				<Contact />
 			</main>
 

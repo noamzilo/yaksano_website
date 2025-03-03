@@ -30,6 +30,12 @@ main {
 	margin: 0 auto;
 }
 
+/* Remove margin when main is next to vertical sections */
+main+.vertical,
+.vertical+main {
+	margin-top: 0;
+}
+
 .section {
 	margin-top: 5em;
 }

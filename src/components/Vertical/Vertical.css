@@ -3,6 +3,9 @@
 	width: 100%;
 	padding: 4em 0;
 	display: flex;
+	justify-content: center;
+	border-radius: 40px;
+	margin: 2em 0;
 }
 
 /* When vertical has var(--clr-bg) background, its projects should have var(--clr-bg-alt) */
@@ -16,10 +19,12 @@
 }
 
 .vertical__content {
-	max-width: 1200px;
-	width: 100%;
-	margin: 0;
-	padding: 0 2em;
+	max-width: 1100px;
+	/* Match main's max-width from App.css */
+	width: 95%;
+	/* Match main's width from App.css */
+	margin: 0 auto;
+	padding: 0;
 }
 
 .vertical__title {
@@ -44,7 +49,7 @@
 
 .project {
 	margin: 0;
-	border-radius: 8px;
+	border-radius: 20px;
 	overflow: hidden;
 	color: var(--clr-fg);
 	transition: transform 0.3s ease;
