@@ -1,68 +1,104 @@
 const header = {
 	// all the properties are optional - can be left empty or deleted
-	homepage: 'https://noamzilo.github.io/personal_website',
-	title: ' ',
+	homepage: 'https://yaksano.com',
+	title: 'Yaksano',
 }
 
 const about = {
 	// all the properties are optional - can be left empty or deleted
-	name: 'Noam Salomonski',
-	role: 'Machine Learning and Data Engineer',
-	description:
-		'I have 10+ years of experience, specializing in scalable ML systems and workflow optimization. Proven track record of reducing manual workloads by 25x and improving detection rates to 95% in production systems. Top 1% Stack Overflow contributor with 27,500+ points, reaching 10M+ people.',
-	resume: 'https://drive.google.com/file/d/1pGqA4FMvDAAbyah4DRYL0qMEoWFZG1Ag/view?usp=sharing',
-	social: {
-		linkedin: 'https://www.linkedin.com/in/noam-salomonski/',
-		github: 'https://github.com/noamzilo',
-		stackoverflow: 'https://stackoverflow.com/users/913098/gulzar',
+	name: 'Yaksano',
+	tagline: 'Transforming Ideas into Digital Reality',
+	description: 'We specialize in building sophisticated software solutions across data engineering, computer vision, and web development. With over a decade of experience, we help businesses harness the power of technology to drive innovation and growth.',
+	contact: {
+		email: 'contact@yaksano.com',
+		linkedin: 'https://www.linkedin.com/company/yaksano',
 	},
 }
 
-const projects = [
+const verticals = [
 	// projects can be added an removed
 	// if there are no projects, Projects section won't show up
 	{
-		name: 'ML data pipelines & Computer Vision at Scale',
-		image: 'uveye1.jpg',
-		description:
-			'Designed SDKs and automated ETL processes handling 1M+ images/week across BigQuery, MongoDB, and OneFS, creating 30+ datasets in ClearML, S3, and Dataloop. Boosted detection rates to 95% through optimized preprocessing and retraining workflows. Achieved 10x pipeline performance improvement and 80% preprocessing runtime reduction. Led standardization initiatives reducing redundant work by 15%.',
-		stack: ['Python', 'PyTorch', 'numpy', 'TensorFlow', 'SQL', 'AWS', 'Computer Vision', 'Optimization',
-			'Data Modeling', 'Data Pipelines', 'ETL', 'BigQuery', 'MongoDB', 'ClearML', 'S3', 'Dataloop',
-		],
-		livePreview: 'https://www.uveye.com/blog/',
+		id: 'data-engineering',
+		title: 'Data Engineering',
+		description: 'Building robust data pipelines and infrastructure to transform raw data into actionable insights.',
+		backgroundImage: 'data-engineering-bg.jpg',
+		projects: [
+			{
+				name: 'Automotive Data Pipeline',
+				client: 'UVeye',
+				description: 'Designed and implemented scalable data pipelines processing over 1 million images weekly. Automated data workflows reduced manual processing time by 95% while improving data quality and accessibility.',
+				image: 'uveye1.jpg',
+				results: [
+					'Processed 1M+ images weekly',
+					'95% reduction in manual work',
+					'10x pipeline performance improvement'
+				]
+			},
+			{
+				name: 'Medical Data Processing System',
+				client: 'EPD Solutions',
+				description: 'Developed real-time cardiac mapping system processing complex medical data streams. Created automated workflows that transformed manual processes into efficient, reliable operations.',
+				image: 'doctors1.jpg',
+				results: [
+					'Real-time medical data processing',
+					'95% automation of manual tasks',
+					'Enhanced clinical reliability'
+				]
+			}
+		]
 	},
 	{
-		name: 'Cardiac Mapping System In Vivo',
-		image: 'doctors1.jpg',
-		description:
-			'Developed cardiac time-series prediction framework with PyTorch Lightning, automating 95% of manual processes. Created custom tooling and designed real-time mapping pipeline using Python and ZeroMQ for in-vivo procedures. Created end-to-end solutions from the physics level to Unity frontend visualization, enabling reliable clinical usage and driving business growth.',
-		stack: ['Python', 'PyTorch Lightning', 'numpy', 'pandas', 'ZeroMQ', 'Unity', 'Time Series Analysis',
-			'Real-time Systems', 'Signal Processing', 'Feature Engineering', 'SQL', 'Data Modeling', 'Machine Learning',
-		],
-		livePreview: 'https://tinyurl.com/3far3csy',
+		id: 'computer-vision',
+		title: 'Computer Vision & AI',
+		description: 'Developing advanced computer vision solutions for complex real-world challenges.',
+		backgroundImage: 'cv-bg.jpg',
+		projects: [
+			{
+				name: 'Automated Vehicle Inspection',
+				client: 'UVeye',
+				description: 'Implemented computer vision algorithms achieving 95% detection accuracy in automotive defect detection. Optimized image processing pipelines for real-time performance.',
+				image: 'uveye2.jpg',
+				results: [
+					'95% detection accuracy',
+					'Real-time processing',
+					'Scalable deployment'
+				]
+			},
+			{
+				name: 'Aerial Image Processing',
+				client: 'Israel Air Force',
+				description: 'Developed advanced image registration and processing system for aerial imagery, achieving 90% improvement in processing speed while maintaining accuracy.',
+				image: 'f15.jpg',
+				results: [
+					'90% faster processing',
+					'Enhanced accuracy',
+					'Military-grade reliability'
+				]
+			}
+		]
 	},
 	{
-		name: 'Avionic Real-Time Data Distribution System',
-		image: 'f15.jpg',
-		description:
-			'Developed real-time data pipelines using DDS for airborne systems, transforming native-per-hardware development into a generic API layer. Enabled 60+ developers to collaborate efficiently, reduced regulation overhead by 90%, and accelerated development cycles. Optimized aerial image registration runtime by 90+% using classical CV techniques. Created a reusable framework for aerial and satellite image processing that became the foundation for future Air Force projects. Developed APIs and embedded applications for airborne platforms, ensuring seamless integration across simulation, algorithm, and application teams.',
-		stack: ['C++', 'Python', 'DDS', 'Real-time Systems', 'Computer Vision', 'API Development',
-			'System Integration', 'Embedded Systems', 'Image Processing', 'Cross-team Collaboration',
-			'Performance Optimization', 'Regulatory Compliance'
-		],
-	},
-	{
-		name: 'JustGptIt.com',
-		image: 'justgptit.jpg',
-		description:
-			'A parodic website similar to LetMeGoogleThatForYou.com, attracting hundreds of new users weekly through organic growth. Developed a serverless web application using GCP, React, Django, Docker, GitHub Actions, PostgreSQL, and CloudFlare. Leveraged Google Cloud Run and CloudFlare reverse proxy with GitHub Pages for deployment. Implemented link-shortening and query-caching using PostgreSQL to optimize cost and latency. Implemented CI/CD pipelines using GitHub Actions for automated testing and deployment. Demonstrated end-to-end problem solving, from product design and frontend to cloud deployment.',
-		stack: ['React', 'Django', 'PostgreSQL', 'Docker', 'Google Cloud Platform', 'CloudFlare',
-			'GitHub Actions', 'CI/CD', 'Cloud Run', 'GitHub Pages', 'Serverless Architecture',
-			'Full Stack Development', 'Web Development'
-		],
-		sourceCode: 'https://github.com/noamzilo/JustGptIt',
-		livePreview: 'https://justgptit.com',
-	},
+		id: 'web-development',
+		title: 'Web & Software Development',
+		description: 'Creating modern, scalable web applications and software solutions.',
+		backgroundImage: 'web-dev-bg.jpg',
+		projects: [
+			{
+				name: 'JustGptIt.com',
+				description: 'Built a viral web application using modern cloud architecture and serverless technologies. Handles thousands of users with optimal performance and minimal costs.',
+				image: 'justgptit.jpg',
+				stack: ['React', 'Cloud Infrastructure', 'Serverless'],
+				livePreview: 'https://justgptit.com'
+			},
+			{
+				name: 'Coming Soon: Enterprise Dashboard',
+				description: 'Advanced analytics dashboard currently in development. Features real-time data visualization and predictive analytics.',
+				image: 'placeholder.jpg',
+				stack: ['React', 'Python', 'Machine Learning'],
+			}
+		]
+	}
 ]
 
 const skills = [
@@ -122,4 +158,4 @@ const contact = {
 	email: 'contact@yaksano.com',
 }
 
-export { header, about, projects, skills, contact }
+export { header, about, verticals, skills, contact }
