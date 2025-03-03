@@ -1,8 +1,7 @@
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import parse from 'html-react-parser'
 import { about } from '../../portfolio'
 import './About.css'
-import parse from 'html-react-parser'
-
 
 const About = () => {
 	const { name, tagline, description, contact } = about
