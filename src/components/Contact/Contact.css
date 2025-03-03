@@ -19,10 +19,21 @@
 	max-width: 600px;
 }
 
-.contact__info p {
+.info-line {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 	margin-bottom: 0.5em;
+}
+
+.info-line svg {
+	flex-shrink: 0;
+}
+
+.info-line p {
 	font-size: 1rem;
 	color: var(--clr-fg-alt);
+	margin: 0;
 }
 
 .btn {
