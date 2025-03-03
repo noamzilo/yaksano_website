@@ -28,7 +28,7 @@ const verticals = [
 				name: 'Automotive Data Pipeline',
 				client: 'UVeye',
 				description: 'Designed and implemented scalable data pipelines processing over 1 million images weekly. Automated data workflows reduced manual processing time by 95% while improving data quality and accessibility.',
-				image: 'uveye1.jpg',
+				image: 'uveye2.jpg',
 				results: [
 					'Processed 1M+ images weekly',
 					'95% reduction in manual work',
@@ -58,7 +58,7 @@ const verticals = [
 				name: 'Automated Vehicle Inspection',
 				client: 'UVeye',
 				description: 'Implemented computer vision algorithms achieving 95% detection accuracy in automotive defect detection. Optimized image processing pipelines for real-time performance.',
-				image: 'uveye2.jpg',
+				image: 'uveye1.jpg',
 				results: [
 					'95% detection accuracy',
 					'Real-time processing',
