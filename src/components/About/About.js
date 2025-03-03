@@ -7,15 +7,24 @@ const About = () => {
 
 	return (
 		<div className='about'>
-			<div className='about__content'>
+			<div className='about__header'>
 				{name && (
-					<h1>
-						<span className='about__name'>{name}</span>
-					</h1>
+					<div className='title-container'>
+						<h1 className='about__name'>{name}</h1>
+					</div>
 				)}
 
-				{tagline && <h2 className='about__tagline'>{tagline}</h2>}
-				<p className='about__desc'>{description}</p>
+				{tagline && (
+					<div className='tagline-container'>
+						<h2 className='about__tagline'>{tagline}</h2>
+					</div>
+				)}
+			</div>
+
+			<div className='content-container'>
+				<p className='about__desc'>
+					<span dangerouslySetInnerHTML={{ __html: description }} />
+				</p>
 
 				<div className='about__contact center'>
 					{contact && (

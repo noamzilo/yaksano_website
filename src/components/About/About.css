@@ -1,18 +1,36 @@
 .about {
 	flex-direction: column;
 	margin-top: 0;
-	padding: 4em 0;
-	text-align: center;
+	padding: 2em 0;
 	background-color: var(--clr-bg);
 	min-height: 100vh;
 	display: flex;
 }
 
-.about__content {
-	max-width: 1200px;
+.about__header {
 	width: 100%;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 2em;
+}
+
+.title-container {
+	width: 100%;
+	text-align: center;
+}
+
+.tagline-container {
+	width: 100%;
+	text-align: center;
+	margin-top: 1.2em;
+}
+
+.content-container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2em;
+	text-align: left;
 }
 
 .about__name {
@@ -21,20 +39,24 @@
 }
 
 .about__tagline {
-	margin-top: 1.2em;
 	font-size: 2rem;
 }
 
 .about__desc {
 	font-size: 1.2rem;
 	max-width: 800px;
-	margin: 2em auto;
+	margin: 2em 0;
 	line-height: 1.6;
 }
 
 .about__desc span {
 	display: block;
 	margin-bottom: 0.1em;
+}
+
+.about__desc strong {
+	font-weight: bold;
+	color: var(--clr-primary);
 }
 
 .about__contact {

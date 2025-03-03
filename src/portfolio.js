@@ -7,13 +7,22 @@ const header = {
 const about = {
 	// all the properties are optional - can be left empty or deleted
 	name: 'Yaksano',
-	tagline: 'Transforming Ideas into Digital Reality',
-	description: 'We specialize in building sophisticated software solutions across data engineering, computer vision, and web development. With over a decade of experience, we help businesses harness the power of technology to drive innovation and growth.',
+	tagline: 'Turn Your Data into a Competitive Advantage',
+	description: `
+		<p>Most companies sit on a goldmine of untapped data—few know how to extract real value from it.</p>
+		
+		<p>At <strong>Yaksano</strong>, we turn raw data into insights, automate workflows, and build intelligent software tailored to your needs.</p>
+
+		<p>With expertise in <strong>AI, data engineering, machine learning, computer vision, and web development</strong>, we help you scale, optimize operations, and stay ahead of the competition.</p>
+		<br/>
+		<p><strong>Let’s build something game-changing.</strong></p>
+	`,
 	contact: {
 		email: 'contact@yaksano.com',
 		// linkedin: 'https://www.linkedin.com/company/yaksano',
 	},
 }
+
 
 const verticals = [
 	// projects can be added an removed
