@@ -18,7 +18,7 @@ const Vertical = ({ vertical }) => {
 					{projects.map((project) => (
 						<div key={uniqid()} className='project'>
 							<img
-								src={`${process.env.PUBLIC_URL}/images/${project.image}`}
+								src={`${process.env.PUBLIC_URL}/${project.image}`}
 								alt={project.name}
 								className='project__image'
 							/>
