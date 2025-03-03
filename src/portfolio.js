@@ -33,7 +33,9 @@ const verticals = [
 					'Processed 1M+ images weekly',
 					'95% reduction in manual work',
 					'10x pipeline performance improvement'
-				]
+				],
+				livePreview: 'https://www.uveye.com/blog/',
+				// Add any missing attributes here if needed
 			},
 			{
 				name: 'Medical Data Processing System',
@@ -44,7 +46,9 @@ const verticals = [
 					'Real-time medical data processing',
 					'95% automation of manual tasks',
 					'Enhanced clinical reliability'
-				]
+				],
+				livePreview: 'https://tinyurl.com/3far3csy',
+				// Add any missing attributes here if needed
 			}
 		]
 	},
@@ -63,7 +67,9 @@ const verticals = [
 					'95% detection accuracy',
 					'Real-time processing',
 					'Scalable deployment'
-				]
+				],
+				livePreview: 'https://www.uveye.com/blog/',
+				// Add any missing attributes here if needed
 			},
 			{
 				name: 'Aerial Image Processing',
@@ -74,7 +80,8 @@ const verticals = [
 					'90% faster processing',
 					'Enhanced accuracy',
 					'Military-grade reliability'
-				]
+				],
+				// Add any missing attributes here if needed
 			}
 		]
 	},
@@ -89,13 +96,15 @@ const verticals = [
 				description: 'Built a viral web application using modern cloud architecture and serverless technologies. Handles thousands of users with optimal performance and minimal costs.',
 				image: 'justgptit.jpg',
 				stack: ['React', 'Cloud Infrastructure', 'Serverless'],
-				livePreview: 'https://justgptit.com'
+				livePreview: 'https://justgptit.com',
+				sourceCode: 'https://github.com/noamzilo/JustGptIt', // Restored source code link
 			},
 			{
 				name: 'AI Generated Content Websites',
 				description: 'A network of websites that use AI to generate content for its users. The websites are monetized through ads and support 100K+ users monthly.',
 				image: 'seo_site.jpg',
 				stack: ['React', 'Python', 'Machine Learning'],
+				// Add any missing attributes here if needed
 			}
 		]
 	}
