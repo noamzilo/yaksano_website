@@ -30,7 +30,8 @@
 	cursor: pointer;
 	padding: 0.8em 1.4em;
 	font-weight: 500;
-	font-size: 1rem;
+	font-size: 0.9rem;
+	text-transform: lowercase;
 	transition: transform 0.2s ease-in-out;
 	margin-top: 1.5em;
 }
@@ -38,12 +39,14 @@
 .btn--outline {
 	color: var(--clr-primary);
 	border: 2px solid var(--clr-primary);
-	background-color: transparent;
+	border-radius: 5px;
+	background: transparent;
 	position: relative;
 	overflow: hidden;
+	padding: 0.8em 1.4em;
 }
 
-.btn--outline:hover {
-	color: var(--clr-bg);
-	background-color: var(--clr-primary);
+.btn--outline:hover,
+.btn--outline:focus {
+	transform: translateY(-4px);
 }
