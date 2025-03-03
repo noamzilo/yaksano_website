@@ -1,5 +1,6 @@
 import uniqid from 'uniqid'
 import './Vertical.css'
+import Project from '../Project/Project'
 
 const Vertical = ({ vertical }) => {
 	const { id, title, description, projects, backgroundColor } = vertical
@@ -16,29 +17,7 @@ const Vertical = ({ vertical }) => {
 
 				<div className='vertical__projects'>
 					{projects.map((project) => (
-						<div key={uniqid()} className='project'>
-							<img
-								src={`${process.env.PUBLIC_URL}/${project.image}`}
-								alt={project.name}
-								className='project__image'
-							/>
-
-							<div className='project__content'>
-								<h3 className='project__title'>{project.name}</h3>
-								{project.client && (
-									<p className='project__client'>Client: {project.client}</p>
-								)}
-								<p className='project__description'>{project.description}</p>
-
-								{project.results && (
-									<ul className='project__results'>
-										{project.results.map((result) => (
-											<li key={uniqid()} className='project__result'>{result}</li>
-										))}
-									</ul>
-								)}
-							</div>
-						</div>
+						<Project key={uniqid()} project={project} />
 					))}
 				</div>
 			</div>

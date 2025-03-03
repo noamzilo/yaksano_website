@@ -1,0 +1,86 @@
+.project {
+	margin: 0;
+	border-radius: 20px;
+	overflow: hidden;
+	color: var(--clr-fg);
+	transition: transform 0.3s ease;
+}
+
+.project:hover {
+	transform: translateY(-5px);
+}
+
+.project__image {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.project__content {
+	padding: 1.5em;
+}
+
+.project__title {
+	font-size: 1.5rem;
+	margin-bottom: 0.5em;
+	color: var(--clr-primary);
+}
+
+.project__client {
+	font-weight: 500;
+	margin-bottom: 1em;
+	color: var(--clr-fg-alt);
+}
+
+.project__description {
+	margin-bottom: 1.5em;
+	line-height: 1.6;
+}
+
+.project__results {
+	list-style: none;
+	padding: 0;
+}
+
+.project__result {
+	margin-bottom: 0.5em;
+	padding-left: 1.5em;
+	position: relative;
+}
+
+.project__result::before {
+	content: '→';
+	position: absolute;
+	left: 0;
+	color: var(--clr-primary);
+}
+
+.project__live-preview {
+	display: inline-block;
+	margin-top: 1em;
+	color: var(--clr-primary);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.project__live-preview:hover {
+	text-decoration: underline;
+}
+
+.project__title-link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.project__title-link:hover {
+	text-decoration: underline;
+}
+
+.project__image-link {
+	display: block;
+	text-decoration: none;
+}
+
+.project__image-link:hover .project__image {
+	opacity: 0.8;
+}
