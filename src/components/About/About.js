@@ -1,6 +1,8 @@
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { about } from '../../portfolio'
 import './About.css'
+import parse from 'html-react-parser'
+
 
 const About = () => {
 	const { name, tagline, description, contact } = about
@@ -22,10 +24,7 @@ const About = () => {
 			</div>
 
 			<div className='content-container'>
-				<p className='about__desc'>
-					<span dangerouslySetInnerHTML={{ __html: description }} />
-				</p>
-
+				<p className='about__desc'>{parse(description)}</p>
 				<div className='about__contact center'>
 					{contact && (
 						<>
