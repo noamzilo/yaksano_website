@@ -32,12 +32,11 @@ const Contact = () => {
 			</div>
 
 			<a href={`mailto:${contact.email}`} className='btn btn--outline'>
-				Let&apos;s Talk!
+				<div className='info-line'>
+					<EmailIcon />
+					<p>contact@yaksano.com</p>
+				</div>
 			</a>
-			<div className='info-line'>
-				<EmailIcon />
-				<p>contact@yaksano.com</p>
-			</div>
 		</section>
 	)
 }
