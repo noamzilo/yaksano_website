@@ -1,6 +1,7 @@
 import { header } from '../../portfolio'
 import Navbar from '../Navbar/Navbar'
 import './Header.css'
+import Logo from '../svgs/logo'
 
 const Header = () => {
 	const { homepage, title } = header
@@ -8,15 +9,7 @@ const Header = () => {
 	return (
 		<header className='header'>
 			<div className='header__container center'>
-				<h3>
-					{homepage ? (
-						<a href={homepage} className='link'>
-							{title}
-						</a>
-					) : (
-						title
-					)}
-				</h3>
+				<Logo />
 				<Navbar />
 			</div>
 		</header>
