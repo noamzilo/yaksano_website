@@ -80,8 +80,8 @@ const verticals = [
 	},
 	{
 		id: 'web-development',
-		title: 'Web & Software Development',
-		description: 'Creating modern, scalable web applications and software solutions.',
+		title: 'Web Development & LLMs',
+		description: 'Creating modern, scalable web applications with optimized costs.',
 		backgroundColor: 'var(--clr-bg-alt)', // Back to alternate color
 		projects: [
 			{
@@ -92,9 +92,9 @@ const verticals = [
 				livePreview: 'https://justgptit.com'
 			},
 			{
-				name: 'Coming Soon: Enterprise Dashboard',
-				description: 'Advanced analytics dashboard currently in development. Features real-time data visualization and predictive analytics.',
-				image: 'placeholder.jpg',
+				name: 'AI Generated Content Websites',
+				description: 'A network of websites that use AI to generate content for its users. The websites are monetized through ads and support 100K+ users monthly.',
+				image: 'seo_site.jpg',
 				stack: ['React', 'Python', 'Machine Learning'],
 			}
 		]
