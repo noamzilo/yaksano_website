@@ -4,6 +4,7 @@ import StopwatchIcon from '../svgs/stopwatchIcon'
 import DashboardIcon from '../svgs/dashboardIcon'
 import LockIcon from '../svgs/lockIcon'
 import MoneyBagIcon from '../svgs/moneyBagIcon'
+import EmailIcon from '../svgs/emailIcon'
 
 const Contact = () => {
 	if (!contact.email) return null
@@ -33,6 +34,10 @@ const Contact = () => {
 			<a href={`mailto:${contact.email}`} className='btn btn--outline'>
 				Let&apos;s Talk!
 			</a>
+			<div className='info-line'>
+				<EmailIcon />
+				<p>contact@yaksano.com</p>
+			</div>
 		</section>
 	)
 }

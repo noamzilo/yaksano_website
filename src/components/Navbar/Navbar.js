@@ -4,7 +4,6 @@ import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
-import { verticals, contact } from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -15,43 +14,18 @@ const Navbar = () => {
 
 	return (
 		<nav className='center nav'>
-			<ul
-				style={{ display: showNavList ? 'flex' : null }}
-				className='nav__list'
-			>
-				{verticals.map(({ id, title }) => (
-					<li key={id} className='nav__list-item'>
-						<a
-							href={`#${id}`}
-							onClick={toggleNavList}
-							className='link link--nav'
-						>
-							{title}
-						</a>
-					</li>
-				))}
+			<a href='#contact' className='link link--nav'>
+				Contact Us
+			</a>
 
-				{contact.email ? (
-					<li className='nav__list-item'>
-						<a
-							href='#contact'
-							onClick={toggleNavList}
-							className='link link--nav'
-						>
-							Contact
-						</a>
-					</li>
-				) : null}
-			</ul>
-
-			<button
+			{/* <button
 				type='button'
 				onClick={toggleTheme}
 				className='btn btn--icon nav__theme'
 				aria-label='toggle theme'
 			>
 				{themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
-			</button>
+			</button> */}
 
 			<button
 				type='button'

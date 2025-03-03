@@ -50,7 +50,7 @@ const verticals = [
 	},
 	{
 		id: 'computer-vision',
-		title: 'Computer Vision & AI',
+		title: 'AI & Computer Vision',
 		description: 'Developing advanced computer vision solutions for complex real-world challenges.',
 		backgroundColor: 'var(--clr-bg)', // Alternate with base color
 		projects: [
