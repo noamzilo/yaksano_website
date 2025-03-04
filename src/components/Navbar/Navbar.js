@@ -9,7 +9,7 @@ const Navbar = () => {
 	const toggleNavList = () => setShowNavList(!showNavList)
 
 	return (
-		<nav className='center nav'>
+		<nav className='nav'>
 			<ul className={`nav__list ${showNavList ? 'show' : ''}`}>
 				<li className='nav__list-item'>
 					<a href='#top' className='link link--nav'>

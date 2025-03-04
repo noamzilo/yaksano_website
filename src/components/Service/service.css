@@ -1,33 +1,17 @@
 .service {
-	min-height: 100vh;
-	width: 100%;
-	padding: 4em 0;
-	display: flex;
-	justify-content: center;
-	margin: 2em 0;
-}
-
-/* When service has var(--clr-bg) background, its projects should have var(--clr-bg-alt) */
-.service[style*="var(--clr-bg)"] .project {
-	background: var(--clr-bg-alt);
-}
-
-/* When service has var(--clr-bg-alt) background, its projects should have var(--clr-bg) */
-.service[style*="var(--clr-bg-alt)"] .project {
-	background: var(--clr-bg);
+	padding: 5em 2em;
 }
 
 .service__content {
 	max-width: 1100px;
-	width: 95%;
 	margin: 0 auto;
-	padding: 0;
 }
 
 .service__title {
 	font-size: 2.5rem;
 	margin-bottom: 1em;
 	text-align: center;
+	color: var(--clr-fg-alt);
 }
 
 .service__description {
@@ -35,6 +19,7 @@
 	text-align: center;
 	max-width: 800px;
 	margin: 0 auto 3em;
+	color: var(--clr-fg);
 }
 
 .service__projects {
@@ -42,6 +27,16 @@
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 2em;
 	padding: 0;
+}
+
+/* When background is var(--clr-bg), projects use var(--clr-bg-alt) */
+.service[style*="var(--clr-bg)"] .project {
+	background: var(--clr-bg-alt);
+}
+
+/* When background is var(--clr-bg-alt), projects use var(--clr-bg) */
+.service[style*="var(--clr-bg-alt)"] .project {
+	background: var(--clr-bg);
 }
 
 @media (max-width: 768px) {

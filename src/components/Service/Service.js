@@ -1,7 +1,7 @@
 // src/components/Service/Service.js
 import uniqid from 'uniqid'
-import './Service.css'
 import Project from '../Project/Project'
+import './Service.css'
 
 const Service = ({ service }) => {
 	const { id, title, description, projects, backgroundColor } = service

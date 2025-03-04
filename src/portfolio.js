@@ -1,27 +1,18 @@
 // src/portfolio.js
 const header = {
-	// all the properties are optional - can be left empty or deleted
 	homepage: 'https://yaksano.com',
 	title: 'Yaksano',
 }
 
 const about = {
-	// all the properties are optional - can be left empty or deleted
 	name: 'Yaksano',
 	tagline: 'Turn Your Data into a Competitive Advantage',
 	description: `
 		<p>Most companies sit on a goldmine of untapped data—few know how to extract real value from it.</p>
-		
 		<p>At <strong>Yaksano</strong>, we turn raw data into insights, automate workflows, and build intelligent software tailored to your needs.</p>
-
 		<p>With expertise in <strong>AI, data engineering, machine learning, computer vision, and web development</strong>, we help you scale, optimize operations, and stay ahead of the competition.</p>
-		<br/>
 		<p><strong>Let’s build something game-changing.</strong></p>
 	`,
-	contact: {
-		email: 'contact@yaksano.com',
-		// linkedin: 'https://www.linkedin.com/company/yaksano',
-	},
 }
 
 const services = [
@@ -46,11 +37,11 @@ const services = [
 			{
 				name: 'Medical Data Processing System',
 				client: 'EPD Solutions',
-				description: 'Developed real-time cardiac mapping system processing complex medical data streams. Created automated workflows that transformed manual processes into efficient operations.',
+				description: 'Developed real-time cardiac mapping system processing complex medical data streams. Automated workflows transformed manual processes into efficient operations.',
 				image: 'doctors1.jpg',
 				results: [
 					'Real-time data processing',
-					'95% automation of manual tasks',
+					'95% automation of tasks',
 					'Enhanced clinical reliability'
 				],
 				livePreview: 'https://tinyurl.com/3far3csy',
@@ -78,7 +69,7 @@ const services = [
 			{
 				name: 'Aerial Image Processing',
 				client: 'Israel Air Force',
-				description: 'Developed advanced image registration and processing system for aerial imagery, achieving 90% improvement in processing speed while maintaining accuracy.',
+				description: 'Developed advanced aerial image registration, achieving a 90% improvement in processing speed while maintaining accuracy.',
 				image: 'f15.jpg',
 				results: [
 					'90% faster processing',
@@ -96,76 +87,32 @@ const services = [
 		projects: [
 			{
 				name: 'JustGptIt.com',
-				description: 'Built a viral web application using modern cloud architecture and serverless technologies. Handles thousands of users with optimal performance and minimal costs.',
+				description: 'Built a viral web application using modern cloud architecture and serverless tech. Thousands of users served with minimal costs.',
 				image: 'justgptit.jpg',
-				stack: ['React', 'Cloud Infrastructure', 'Serverless'],
+				results: [
+					'Scalable serverless deployment',
+					'Thousands of daily active users',
+					'Minimal operational cost'
+				],
 				livePreview: 'https://justgptit.com',
 				sourceCode: 'https://github.com/noamzilo/JustGptIt',
 			},
 			{
 				name: 'AI Generated Content Websites',
-				description: 'A network of sites that leverage AI for content generation. Monetized through ads, supporting 100K+ users monthly.',
+				description: 'A network of websites that use AI to generate content. Monetized through ads, supporting 100K+ users monthly.',
 				image: 'seo_site.jpg',
-				stack: ['React', 'Python', 'Machine Learning'],
+				results: [
+					'100K monthly users',
+					'Automated content generation',
+					'Ad-based revenue streams'
+				]
 			}
 		]
 	}
-]
-
-const expertise = [
-	// Core ML & Data Engineering
-	'Machine Learning',
-	'Deep Learning',
-	'Computer Vision',
-	'Data Engineering',
-	'ETL Pipeline Design',
-	'Time Series Analysis',
-	'Signal Processing',
-
-	// Programming Languages
-	'Python',
-	'C++',
-	'SQL',
-
-	// ML Frameworks & Libraries
-	'PyTorch',
-	'PyTorch Lightning',
-	'TensorFlow',
-	'Keras',
-	'numpy',
-	'pandas',
-
-	// Cloud & Data Infrastructure
-	'AWS',
-	'S3',
-	'BigQuery',
-	'MongoDB',
-	'ClearML',
-	'Dataloop',
-
-	// System Design & Architecture
-	'Real-time Systems',
-	'Distributed Systems',
-	'Message Queues/Brkokers',
-	'API Development',
-	'System Integration',
-	'Performance Optimization',
-
-	// Development Tools & Practices
-	'Git',
-	'Docker',
-	'CI/CD',
-	'Agile Development',
-
-	// Domain Knowledge
-	'Image Processing',
-	'Feature Engineering',
-	'Data Modeling',
-	'Embedded Systems',
 ]
 
 const contact = {
 	email: 'contact@yaksano.com',
 }
 
-export { header, about, services, expertise, contact }
+export { header, about, services, contact }

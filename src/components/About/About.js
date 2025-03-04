@@ -1,48 +1,22 @@
 // src/components/About/About.js
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import parse from 'html-react-parser'
 import { about } from '../../portfolio'
 import './About.css'
 
 const About = () => {
-	const { name, tagline, description, contact } = about
+	const { name, tagline, description } = about
 
 	return (
-		<div className='about'>
+		<section className='about section' id='about'>
 			<div className='about__header'>
-				{name && (
-					<div className='title-container'>
-						<h1 className='about__name'>{name}</h1>
-					</div>
-				)}
-
-				{tagline && (
-					<div className='tagline-container'>
-						<h2 className='about__tagline'>{tagline}</h2>
-					</div>
-				)}
+				{name && <h2 className='about__name'>{name}</h2>}
+				{tagline && <h3 className='about__tagline'>{tagline}</h3>}
 			</div>
-
-			<div className='content-container'>
-				<h3>Company Overview</h3>
-				<p className='about__desc'>{parse(description)}</p>
-				<div className='about__contact center'>
-					{contact && (
-						<>
-							{contact.linkedin && (
-								<a
-									href={contact.linkedin}
-									aria-label='linkedin'
-									className='link link--icon'
-								>
-									<LinkedInIcon />
-								</a>
-							)}
-						</>
-					)}
-				</div>
+			<div className='about__content'>
+				<h4>Company Overview</h4>
+				{parse(description)}
 			</div>
-		</div>
+		</section>
 	)
 }
 
