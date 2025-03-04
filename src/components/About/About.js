@@ -1,3 +1,4 @@
+// src/components/About/About.js
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import parse from 'html-react-parser'
 import { about } from '../../portfolio'
@@ -23,6 +24,7 @@ const About = () => {
 			</div>
 
 			<div className='content-container'>
+				<h3>Company Overview</h3>
 				<p className='about__desc'>{parse(description)}</p>
 				<div className='about__contact center'>
 					{contact && (

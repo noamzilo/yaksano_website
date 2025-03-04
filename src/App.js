@@ -1,11 +1,12 @@
+// src/App.js
 import { useContext } from 'react'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
-import Vertical from './components/Vertical/Vertical'
+import Service from './components/Service/Service'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
-import { verticals } from './portfolio'
+import { services } from './portfolio'
 import './App.css'
 
 const App = () => {
@@ -19,8 +20,8 @@ const App = () => {
 				<About />
 			</main>
 
-			{verticals.map((vertical) => (
-				<Vertical key={vertical.id} vertical={vertical} />
+			{services.map((service) => (
+				<Service key={service.id} service={service} />
 			))}
 
 			<main>

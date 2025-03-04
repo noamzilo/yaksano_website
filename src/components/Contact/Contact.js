@@ -1,3 +1,4 @@
+// src/components/Contact/Contact.js
 import { contact } from '../../portfolio'
 import './Contact.css'
 import StopwatchIcon from '../svgs/stopwatchIcon'
@@ -34,7 +35,7 @@ const Contact = () => {
 			<a href={`mailto:${contact.email}`} className='btn btn--outline'>
 				<div className='info-line'>
 					<EmailIcon />
-					<p>contact@yaksano.com</p>
+					<p>{contact.email}</p>
 				</div>
 			</a>
 		</section>

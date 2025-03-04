@@ -1,3 +1,4 @@
+// src/portfolio.js
 const header = {
 	// all the properties are optional - can be left empty or deleted
 	homepage: 'https://yaksano.com',
@@ -23,20 +24,17 @@ const about = {
 	},
 }
 
-
-const verticals = [
-	// projects can be added an removed
-	// if there are no projects, Projects section won't show up
+const services = [
 	{
 		id: 'data-engineering',
 		title: 'Data Engineering',
 		description: 'Building robust data pipelines and infrastructure to transform raw data into actionable insights.',
-		backgroundColor: 'var(--clr-bg-alt)', // Use theme colors
+		backgroundColor: 'var(--clr-bg-alt)',
 		projects: [
 			{
 				name: 'Automotive Data Pipeline',
 				client: 'UVeye',
-				description: 'Designed and implemented scalable data pipelines processing over 1 million images weekly. Automated data workflows reduced manual processing time by 95% while improving data quality and accessibility.',
+				description: 'Designed and implemented scalable data pipelines processing over 1 million images weekly. Automated data workflows reduced manual processing time by 95%.',
 				image: 'uveye2.jpg',
 				results: [
 					'Processed 1M+ images weekly',
@@ -44,20 +42,18 @@ const verticals = [
 					'10x pipeline performance improvement'
 				],
 				livePreview: 'https://www.uveye.com/blog/',
-				// Add any missing attributes here if needed
 			},
 			{
 				name: 'Medical Data Processing System',
 				client: 'EPD Solutions',
-				description: 'Developed real-time cardiac mapping system processing complex medical data streams. Created automated workflows that transformed manual processes into efficient, reliable operations.',
+				description: 'Developed real-time cardiac mapping system processing complex medical data streams. Created automated workflows that transformed manual processes into efficient operations.',
 				image: 'doctors1.jpg',
 				results: [
-					'Real-time medical data processing',
+					'Real-time data processing',
 					'95% automation of manual tasks',
 					'Enhanced clinical reliability'
 				],
 				livePreview: 'https://tinyurl.com/3far3csy',
-				// Add any missing attributes here if needed
 			}
 		]
 	},
@@ -65,12 +61,12 @@ const verticals = [
 		id: 'computer-vision',
 		title: 'AI & Computer Vision',
 		description: 'Developing advanced computer vision solutions for complex real-world challenges.',
-		backgroundColor: 'var(--clr-bg)', // Alternate with base color
+		backgroundColor: 'var(--clr-bg)',
 		projects: [
 			{
 				name: 'Automated Vehicle Inspection',
 				client: 'UVeye',
-				description: 'Implemented computer vision algorithms achieving 95% detection accuracy in automotive defect detection. Optimized image processing pipelines for real-time performance.',
+				description: 'Implemented computer vision algorithms with 95% detection accuracy in automotive defect detection. Optimized image processing pipelines for real-time performance.',
 				image: 'uveye1.jpg',
 				results: [
 					'95% detection accuracy',
@@ -78,7 +74,6 @@ const verticals = [
 					'Scalable deployment'
 				],
 				livePreview: 'https://www.uveye.com/blog/',
-				// Add any missing attributes here if needed
 			},
 			{
 				name: 'Aerial Image Processing',
@@ -90,7 +85,6 @@ const verticals = [
 					'Enhanced accuracy',
 					'Military-grade reliability'
 				],
-				// Add any missing attributes here if needed
 			}
 		]
 	},
@@ -98,7 +92,7 @@ const verticals = [
 		id: 'web-development',
 		title: 'Web Development & LLMs',
 		description: 'Creating modern, scalable web applications with optimized costs.',
-		backgroundColor: 'var(--clr-bg-alt)', // Back to alternate color
+		backgroundColor: 'var(--clr-bg-alt)',
 		projects: [
 			{
 				name: 'JustGptIt.com',
@@ -106,20 +100,19 @@ const verticals = [
 				image: 'justgptit.jpg',
 				stack: ['React', 'Cloud Infrastructure', 'Serverless'],
 				livePreview: 'https://justgptit.com',
-				sourceCode: 'https://github.com/noamzilo/JustGptIt', // Restored source code link
+				sourceCode: 'https://github.com/noamzilo/JustGptIt',
 			},
 			{
 				name: 'AI Generated Content Websites',
-				description: 'A network of websites that use AI to generate content for its users. The websites are monetized through ads and support 100K+ users monthly.',
+				description: 'A network of sites that leverage AI for content generation. Monetized through ads, supporting 100K+ users monthly.',
 				image: 'seo_site.jpg',
 				stack: ['React', 'Python', 'Machine Learning'],
-				// Add any missing attributes here if needed
 			}
 		]
 	}
 ]
 
-const skills = [
+const expertise = [
 	// Core ML & Data Engineering
 	'Machine Learning',
 	'Deep Learning',
@@ -172,8 +165,7 @@ const skills = [
 ]
 
 const contact = {
-	// email is optional - if left empty Contact section won't show up
 	email: 'contact@yaksano.com',
 }
 
-export { header, about, verticals, skills, contact }
+export { header, about, services, expertise, contact }

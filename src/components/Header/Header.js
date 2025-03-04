@@ -1,9 +1,9 @@
+// src/components/Header/Header.js
 import Navbar from '../Navbar/Navbar'
 import './Header.css'
 import Logo from '../svgs/logo'
 
-const Header = () =>
-(
+const Header = () => (
 	<header className='header'>
 		<div className='header__container center'>
 			<Logo />
@@ -11,6 +11,5 @@ const Header = () =>
 		</div>
 	</header>
 )
-
 
 export default Header
